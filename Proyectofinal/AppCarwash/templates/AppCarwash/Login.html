@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% extends "AppCarwash/padre.html" %}
+        {% load static %}
+        
+    </head>
+
+    <body>
+        {% block body %}
+        <!-- Page Header Start -->
+        <div class="page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Inicio de Sesion</h2>
+                    </div>
+                    <div class="col-12">
+                        <a>Para agendar un turno deberas iniciar sesion</a>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <!-- Page Header End -->
+        <!--Login Start-->
+    <div class="col-md-3" style="margin-left: 480px;">
+        <div class="contact-form">
+            <div id="success"></div>
+                <div class="control-group">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<form action="" method="POST">
+    {% csrf_token %}
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label float-md-start">Nombre de Usuario</label>
+        <input type="text" class="form-control" name="username" id="exampleInputEmail1">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label float-md-start">Contraseña</label>
+        <input type="password" class="form-control" name="password" id="exampleInputPassword1">
+      </div>
+       
+    <button type="submit" class= "btn btn-custom" style="margin-left: 55px;">Iniciar sesion</button>
+    <a type="button" class="btn btn-custom" href="/AppCarwash/registro/" style="margin-top: 20px;margin-left: 60px;">Registrate</a>
+</form>
+
+                </div>
+            </div>
+        </div>    
+    </div>
+<!--Login End-->
+	    {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% extends "AppCarwash/padre.html" %}
+        {% load static %}
+        
+    </head>
+
+    <body>
+        {% block body %}
+          <!-- Page Header Start -->
+          <div class="page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Servicios</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header End -->
+        
+        
+        <!-- Service Start -->
+        <div class="service">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>¿Que Ofrecemos?</p>
+                    <h2>Nuestros Servicios</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="service-item">
+                            <i class="flaticon-car-wash-1"></i>
+                            <h3>Lavado Premium</h3>
+                            <p>Lavado de carroceria, limpieza de interior, aspirado de alfombras, lavado de llantas, lavado de motor, terminacion con cera y silicona.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="service-item">
+                            <i class="flaticon-car-wash"></i>
+                            <h3>Pulido Vehicular</h3>
+                            <p>Pulido y abrillantamiento de pintura, elimina pequeños rayones e imperfecciones.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="service-item">
+                            <i class="flaticon-car-wash"></i>
+                            <h3>Pulido de Opticas</h3>
+                            <p>Pulido para acrilico de opticas, elimina manchas, rayones, y amarillentamiento producido por el sol, dejando las opticas como nuevas.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="service-item">
+                            <i class="flaticon-vacuum-cleaner"></i>
+                            <h3>Wrap Vehicular</h3>
+                            <p> Wraping de vehiculos, colocacion de vinilos vehiculares, variedad de colores y texturas.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="service-item">
+                            <i class="flaticon-seat"></i>
+                            <h3>Polarizados</h3>
+                            <p>Colocacion de polarizado en ventanillas vehiculares, 3 tonos a elegir: 
+                                - Suave
+                                - Intermedio
+                                - Oscuro
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="service-item">
+                            <i class="flaticon-car-service"></i>
+                            <h3>Limpieza de Tapizados e Interiores</h3>
+                            <p>Limpieza completa de interiores: butacas, techo, paneles, alfombras. Incluye aspirado.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="service-item">
+                            <i class="flaticon-car-service-2"></i>
+                            <h3>Fundas</h3>
+                            <p>Venta y colocacion de cubre butacas, variedad de modelos y colores.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="service-item">
+                            <i class="flaticon-car-wash"></i>
+                            <h3>Accesorios</h3>
+                            <p>Venta de accesorios para vehiculos. Lamparas led, cubrevolantes, desodorantes, alfombras, articulos de limpieza vehicular, paños de microfibra, etc. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+        
+        
+        <!-- Testimonial Start -->
+        <div class="testimonial">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Testimonios</p>
+                    <h2>Opiniones de nuestros clientes</h2>
+                </div>
+                <div class="owl-carousel testimonials-carousel">
+                    <div class="testimonial-item">
+                        <img src="{% static 'AppCarwash/img/testimonial-1.jpg' %}" alt="Image">
+                        <div class="testimonial-text">
+                            <h3>Jorge Diaz</h3>
+                            <h4>Cliente</h4>
+                            <p>
+                                Increible!!! Dejaron mi auto como si fuera 0 kilometro, recomendio que dejen sus autos en manos de M&A Garage!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <img src="{% static 'AppCarwash/img/testimonial-2.jpg' %}" alt="Image">
+                        <div class="testimonial-text">
+                            <h3>Monica Farias</h3>
+                            <h4>Cliente</h4>
+                            <p>
+                                Mi auto volvio a brillar despues de pasar por M&A Garage, Gracias chicos!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <img src="{% static 'AppCarwash/img/testimonial-3.jpg' %}" alt="Image">
+                        <div class="testimonial-text">
+                            <h3>Claudio Basone </h3>
+                            <h4>Cliente</h4>
+                            <p>
+                                Todos me preguntan donde lavaron mi auto, yo solo lo lleve al mejor lugar! 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <img src="{% static 'AppCarwash/img/testimonial-4.jpg' %}" alt="Image">
+                        <div class="testimonial-text">
+                            <h3>Juan Carlos Lima</h3>
+                            <h4>Cliente</h4>
+                            <p>
+                                Me recomedaron el lugar, simplemente quede encantado con el resultado. Ganaron un cliente regular, lo recomiendo!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+	    {% endblock %}
+    </body>
+</html>
+

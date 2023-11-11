@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% extends "AppCarwash/padre.html" %}
+        {% load static %}
+        
+        
+    </head>
+
+    <body>
+        {% block body %}
+           <!-- Page Header Start -->
+           <div class="page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Agenda un turno</h2>
+                    </div>
+                    <div class="col-12">
+                        <a>Especificanos fecha y servicios que te interesa</a>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <!-- Page Header End -->
+<!--Login Start-->
+<div class="col-md-3" style="margin-left: 480px;">
+<div class="contact-form">
+    <div id="success"></div>
+        <div class="control-group">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agendar Turno</title>
+</head>
+<body>
+    {{ error }}
+<form action="" method="POST">
+{% csrf_token %}
+{{ form.as_p }}
+<button type="submit" class= "btn btn-custom" href="/AppCarwash/Agendado/"style="margin-left: 55px;">Agendar</button>
+
+</form>
+        </div>
+    </div>
+</div>    
+</div>
+<!--Login End-->
+	    {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% extends "AppCarwash/padre.html" %}
+        {% load static %}
+        
+    </head>
+
+    <body>
+        {% block body %}
+        <!-- Carousel Start -->
+        <div class="carousel">
+            <div class="container-fluid">
+                <div class="owl-carousel">
+                    <div class="carousel-item">
+                        <div class="carousel-img">
+                            <img src="{% static 'AppCarwash/img/carousel-1.jpg' %}" alt="Image" style="margin-inline-end: 10px">
+                        </div>
+                        <div class="carousel-text">
+                            <h3>Lavado & Detailing</h3>
+                            <h1>Deja tu auto como nuevo</h1>
+                            <p>
+                                ¡Haz que tu vehiculo brille como nuevo con nuestros servicios exclusivos!
+                            </p>
+                            <a type= "button" class="btn btn-custom" href="/AppCarwash/servicios/">Conoce más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+        
+
+        <!-- About Start -->
+        <div class="about">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-img">
+                            <img src="{% static 'AppCarwash/img/about.jpg' %}" alt="Image" style="margin-top: 350px;">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="section-header text-left" style="margin-top: 350px;">
+                            <p>Sobre Nosotros</p>
+                            <h2>Lavados y Detailing de Vehiculos</h2>
+                        </div>
+                        <div class="about-content">
+                            <p> Somos un grupo de jovenes apasionados por los vehiculos, nos dedicamos a la limpieza, desinfeccion, embellecimiento y mejoras de autos, camionetas, motocicletas, y cualquier tipo de vehiculo... Acercate a conocernos!!!
+                            </p>
+                            <ul>
+                                <li><i class="far fa-check-circle"></i>Lavado Premium</li>
+                                <li><i class="far fa-check-circle"></i>Pulido Vehicular</li>
+                                <li><i class="far fa-check-circle"></i>Pulido de Opticas</li>
+                                <li><i class="far fa-check-circle"></i>Wrap Vehicular</li>
+                                <li><i class="far fa-check-circle"></i>Polarizados</li>
+                                <li><i class="far fa-check-circle"></i>Limpieza de Tapizados e Interiores</li>
+                                <li><i class="far fa-check-circle"></i>Fundas</li>
+                                <li><i class="far fa-check-circle"></i>Accesorios</li>
+                            </ul>
+                            <a type= "button" class="btn btn-custom" href="/AppCarwash/servicios/">Conoce más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Service Start -->
+        <div class="service">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>¿Que Ofrecemos?</p>
+                    <h2>Nuestros Servicios</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="service-item">
+                            <i class="flaticon-car-wash-1"></i>
+                            <h3>Lavado Premium</h3>
+                            <p>Lavado de carroceria, limpieza de interior, aspirado de alfombras, lavado de llantas, lavado de motor, terminacion con cera y silicona.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="service-item">
+                            <i class="flaticon-car-wash"></i>
+                            <h3>Pulido Vehicular</h3>
+                            <p>Pulido y abrillantamiento de pintura, elimina pequeños rayones e imperfecciones.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="service-item">
+                            <i class="flaticon-car-wash"></i>
+                            <h3>Pulido de Opticas</h3>
+                            <p>Pulido para acrilico de opticas, elimina manchas, rayones, y amarillentamiento producido por el sol, dejando las opticas como nuevas.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="service-item">
+                            <i class="flaticon-vacuum-cleaner"></i>
+                            <h3>Wrap Vehicular</h3>
+                            <p> Wraping de vehiculos, colocacion de vinilos vehiculares, variedad de colores y texturas.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="service-item">
+                            <i class="flaticon-seat"></i>
+                            <h3>Polarizados</h3>
+                            <p>Colocacion de polarizado en ventanillas vehiculares, 3 tonos a elegir: 
+                                - Suave
+                                - Intermedio
+                                - Oscuro
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="service-item">
+                            <i class="flaticon-car-service"></i>
+                            <h3>Limpieza de Tapizados e Interiores</h3>
+                            <p>Limpieza completa de interiores: butacas, techo, paneles, alfombras. Incluye aspirado.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="service-item">
+                            <i class="flaticon-car-service-2"></i>
+                            <h3>Fundas</h3>
+                            <p>Venta y colocacion de cubre butacas, variedad de modelos y colores.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="service-item">
+                            <i class="flaticon-car-wash"></i>
+                            <h3>Accesorios</h3>
+                            <p>Venta de accesorios para vehiculos. Lamparas led, cubrevolantes, desodorantes, alfombras, articulos de limpieza vehicular, paños de microfibra, etc. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+        
+        
+        <!-- Facts Start -->
+        <div class="facts" data-parallax="scroll" data-image-src="img/facts.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="facts-item" style="margin-left: 250px;">
+                            <i class="fa fa-users"></i>
+                            <div class="facts-text">
+                                <h3 data-toggle="counter-up">1500</h3>
+                                <p>Clientes Satisfechos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="facts-item" style="margin-left:300px;">
+                            <i class="fa fa-check"></i>
+                            <div class="facts-text">
+                                <h3 data-toggle="counter-up">5000</h3>
+                                <p>Proyectos Completados</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Facts End -->
+        
+        
+        <!-- Price Start -->
+        <div class="price">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Combos</p>
+                    <h2>Elegi el tuyo</h2>
+                </div> 
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="price-item">
+                            <div class="price-header">
+                                <h3>Lavado Premium Basico</h3>
+                                <h2><span>$</span><strong>10.000</strong><span>.00</span></h2>
+                            </div>
+                            <div class="price-body">
+                                <ul>
+                                    <li><i class="far fa-check-circle"></i>Lavado Premium</li>
+                                    <li><i class="far fa-check-circle"></i>Aspirado</li>
+                                    <li><i class="far fa-check-circle"></i>Lavado de llantas</li>
+                                    <li><i class="far fa-times-circle"></i>Limpieza de interior</li>
+                                    <li><i class="far fa-times-circle"></i>Pulido Vehicular</li>
+        
+                                </ul>
+                            </div>
+                            <div class="price-footer">
+                                <a class="btn btn-custom" href="/AppCarwash/login/">Agendar Turno</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="price-item featured-item">
+                            <div class="price-header">
+                                <h3>Lavado Premium Plus</h3>
+                                <h2><span>$</span><strong>25.000</strong><span>.00</span></h2>
+                            </div>
+                            <div class="price-body">
+                                <ul>
+                                    <li><i class="far fa-check-circle"></i>Lavado Premium</li>
+                                    <li><i class="far fa-check-circle"></i>Aspirado</li>
+                                    <li><i class="far fa-check-circle"></i>Lavado de llantas</li>
+                                    <li><i class="far fa-check-circle"></i>Limpieza de interior</li>
+                                    <li><i class="far fa-times-circle"></i>Pulido Vehicular</li>
+                                </ul>
+                            </div>
+                            <div class="price-footer">
+                                <a class="btn btn-custom" href="/AppCarwash/login/">Agendar Turno</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="price-item">
+                            <div class="price-header">
+                                <h3>Lavado Premium Deluxe</h3>
+                                <h2><span>$</span><strong>50.000</strong><span>.00</span></h2>
+                            </div>
+                            <div class="price-body">
+                                <ul>
+                                    <li><i class="far fa-check-circle"></i>Lavado Premium</li>
+                                    <li><i class="far fa-check-circle"></i>Aspirado</li>
+                                    <li><i class="far fa-check-circle"></i>Lavado de llantas</li>
+                                    <li><i class="far fa-check-circle"></i>Limpieza de interior</li>
+                                    <li><i class="far fa-check-circle"></i>Pulido Vehicular</li>
+                                </ul>
+                            </div>
+                            <div class="price-footer">
+                                <a class="btn btn-custom" href="/AppCarwash/login/">Agendar Turno</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="price">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Servicios</p>
+                    <h2>Elegi el tuyo</h2>
+                </div>
+                <div class="row"> 
+                    <div class="col-md-4">
+                        <div class="price-item">
+                            <div class="price-header">
+                                <h3>Pulido Vehicular</h3>
+                                <h2><span>$</span><strong>20.000</strong><span>.00</span></h2>
+                            </div>
+                            <div class="price-body">
+                                <ul>
+                                    <li><i class="far fa-check-circle"></i> Abrillantamiento completo</li>
+                                </ul>
+                            </div>
+                            <div class="price-footer">
+                                <a class="btn btn-custom" href="/AppCarwash/login/">Agendar Turno</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="price-item featured-item">
+                            <div class="price-header">
+                                <h3>Pulido de Opticas</h3>
+                                <h2><span>$</span><strong>8.000</strong><span>.00</span></h2>
+                            </div>
+                            <div class="price-body">
+                                <ul>
+                                    <li><i class="far fa-check-circle"></i>Pulido de Opticas Delanteras</li>
+                                </ul>
+                            </div>
+                            <div class="price-footer">
+                                <a class="btn btn-custom" href="/AppCarwash/login/">Agendar Turno</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="price-item">
+                            <div class="price-header">
+                                <h3>Polarizado</h3>
+                                <h2><span>$</span><strong>28.000</strong><span>.00</span></h2>
+                            </div>
+                            <div class="price-body">
+                                <ul>
+                                    <li><i class="far fa-check-circle"></i>Polarizado completo de vehiculo</li>
+                                </ul>
+                            </div>
+                            <div class="price-footer">
+                                <a class="btn btn-custom" href="/AppCarwash/login/">Agendar Turno</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="price">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4" style="margin-left:370px;">
+                        <div class="price-item featured-item">
+                            <div class="price-header">
+                                <h3>Wrapping Vehicular</h3>
+                                <h2><span>PEDIR</span></h2>
+                                <h2><span><strong>PRESUPUESTO</strong></span></h2>
+                            </div>
+                            <div class="price-body">
+                                <ul>
+                                    <li><i class="far fa-check-circle"></i>Wrapping vehicular completo</li>
+                                </ul>
+                            </div>
+                            <div class="price-footer">
+                                <a class="btn btn-custom" href="/AppCarwash/login/">Presupuesto</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Price End -->
+        
+        
+        <!-- Location Start -->
+        <div class="location">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="section-header text-left">
+                            <p>Ubicación</p>
+                            <h2>Lavados y Detailing</h2>
+                        </div>
+                        <div class="row" style="margin-left: 60px;">
+                            <div class="col-md-6">
+                                <div class="location-item">
+                                    <i class="fa fa-map-marker-alt"></i>
+                                    <div class="location-text">
+                                        <h3>M&A Garage</h3>
+                                        <p>Av. Triunvirato 6320 - Villa Bosch, Tres de Febrero, Buenos Aires, Argentina (1682)</p>
+                                        <p><strong>Telefono:</strong>+54 11 32779559</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4"style="margin-top: 50px;">
+                    <div class="col-md-12"style="margin-right: 50px;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.9262007229377!2d-58.57829392546196!3d-34.580733856282585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb9c70a959bff%3A0x19861a4d13570609!2sTriunvirato%206320%2C%20Billinghurst%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1696705196421!5m2!1ses-419!2sar" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Location End -->
+
+
+        <!-- Team Start -->
+        <div class="team">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Team</p>
+                    <h2>Nuestro Equipo</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="{% static 'AppCarwash/img/team-1.jpg' %}" alt="Team Image">
+                            </div>
+                            <div class="team-text">
+                                <h2>Jose Tapia</h2>
+                                <p>Encargado</p>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="{% static 'AppCarwash/img/team-2.jpg' %}" alt="Team Image">
+                            </div>
+                            <div class="team-text">
+                                <h2>Agustin Ponce</h2>
+                                <p>Pulidor</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="{% static 'AppCarwash/img/team-3.jpg' %}" alt="Team Image">
+                            </div>
+                            <div class="team-text">
+                                <h2>Thomas Lopez</h2>
+                                <p>Empleado</p>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="{% static 'AppCarwash/img/team-4.jpg' %}" alt="Team Image">
+                            </div>
+                            <div class="team-text">
+                                <h2>Gaston Ramirez</h2>
+                                <p>Wrap/Polarizador</p>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+        
+        
+        <!-- Testimonial Start -->
+        <div class="testimonial">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Testimonios</p>
+                    <h2>Opiniones de nuestros clientes</h2>
+                </div>
+                <div class="owl-carousel testimonials-carousel">
+                    <div class="testimonial-item">
+                        <img src="{% static 'AppCarwash/img/testimonial-1.jpg' %}" alt="Image">
+                        <div class="testimonial-text">
+                            <h3>Jorge Diaz</h3>
+                            <h4>Cliente</h4>
+                            <p>
+                                Increible!!! Dejaron mi auto como si fuera 0 kilometro, recomendio que dejen sus autos en manos de M&A Garage!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <img src="{% static 'AppCarwash/img/testimonial-2.jpg' %}" alt="Image">
+                        <div class="testimonial-text">
+                            <h3>Monica Farias</h3>
+                            <h4>Cliente</h4>
+                            <p>
+                                Mi auto volvio a brillar despues de pasar por M&A Garage, Gracias chicos!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <img src="{% static 'AppCarwash/img/testimonial-3.jpg' %}" alt="Image">
+                        <div class="testimonial-text">
+                            <h3>Claudio Basone </h3>
+                            <h4>Cliente</h4>
+                            <p>
+                                Todos me preguntan donde lavaron mi auto, yo solo lo lleve al mejor lugar! 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <img src="{% static 'AppCarwash/img/testimonial-4.jpg' %}" alt="Image">
+                        <div class="testimonial-text">
+                            <h3>Juan Carlos Lima</h3>
+                            <h4>Cliente</h4>
+                            <p>
+                                Me recomedaron el lugar, simplemente quede encantado con el resultado. Ganaron un cliente regular, lo recomiendo!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+
+        <!-- Blog Start -->
+        <div class="blog">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Blog</p>
+                    <h2>Novedades y Curiosidades</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="{% static 'AppCarwash/img/blog-1.jpg' %}" alt="Image">
+                                <div class="meta-date">
+                                    <span>23</span>
+                                    <strong>Jan</strong>
+                                    <span>2023</span>
+                                </div>
+                            </div>
+                            <div class="blog-text">
+                                <h3><a href="#">Nanotecnología de Revestimiento:</a></h3>
+                                <p>
+                                    Imagina un escudo invisible que protege tu auto de manchas, polvo y suciedad. Con nuestra avanzada nanotecnología de revestimiento, aplicamos una capa ultrafina pero increíblemente resistente sobre la superficie de tu vehículo. Este revolucionario escudo repelente de suciedad mantiene tu auto impecable durante más tiempo y facilita la limpieza.
+                                </p>
+                            </div>
+                            <div class="blog-meta">
+                                <i class="fa fa-comments"></i><h6>18 Comentarios</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="{% static 'AppCarwash/img/blog-2.jpg' %}" alt="Image">
+                                <div class="meta-date">
+                                    <span>03</span>
+                                    <strong>Jun</strong>
+                                    <span>2023</span>
+                                </div>
+                            </div>
+                            <div class="blog-text">
+                                <h3><a href="#">Limpieza Ultrasónica</a></h3>
+                                <p>
+                                    Hemos adoptado la tecnología ultrasónica para realizar una limpieza profunda y delicada en las áreas más difíciles de alcanzar de tu vehículo. Los transductores ultrasónicos emiten ondas de alta frecuencia, eliminando la suciedad y los residuos de las áreas de difícil acceso, como las rejillas de ventilación y los rincones del interior del auto.
+                                </p>
+                            </div>
+                            <div class="blog-meta">
+                                <i class="fa fa-comments"></i><h6>10 Comentarios</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="{% static 'AppCarwash/img/blog-3.jpg' %}" alt="Image">
+                                <div class="meta-date">
+                                    <span>12</span>
+                                    <strong>Sep</strong>
+                                    <span>2023</span>
+                                </div>
+                            </div>
+                            <div class="blog-text">
+                                <h3><a href="#">Eco-Friendly y Sin Agua</a></h3>
+                                <p>
+                                    Nuestro enfoque eco-friendly utiliza técnicas de limpieza sin agua que son suaves con el medio ambiente y efectivas para tu vehículo. Utilizamos productos biodegradables y métodos de limpieza de alta presión que eliminan la necesidad de grandes cantidades de agua, ayudando a conservar este valioso recurso mientras mantenemos tu auto reluciente.
+                                </p>
+                            </div>
+                            <div class="blog-meta">
+                                <i class="fa fa-comments"></i><h6>16 Comentarios</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog End -->
+	    {% endblock %}
+    </body>
+</html>

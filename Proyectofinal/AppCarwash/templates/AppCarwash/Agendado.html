@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% extends "AppCarwash/padre.html" %}
+        {% load static %}
+        
+    </head>
+
+    <body>
+        {% block body %}
+         <!-- Nav Bar End -->
+         <div class="container copyright">
+            <table class="table table-striped">
+                <thead>
+                    <br>
+                    <ul>
+                        {% for turno in turnos %}
+                        <li>
+                          <a href="{% url 'Agendado' %}">
+                        
+                            <b><strong>{{turno.user}}</strong></a></b>
+                        <br>
+                            <b><i>{{user.id}} {{turno.service}}</b> | {{turno.date}} | {{turno.time}}</i> </a> - <a style="margin-inline: auto;" type="button" class="btn-custom" href="/AppCarwash/editar/">Editar</a> | <a style="margin-inline: auto;" type="button" class="btn-custom" href="/AppCarwash/eliminar/"> Eliminar</a>
+                        </li> 
+                        <br>
+                        {% endfor %}
+                    </ul>
+                </thead>  
+            </table>
+         <tr>
+            <a type= "button" class="btn btn-custom" href="/AppCarwash/agendar/">Agregar nuevo turno</a>
+            <a type= "button" class="btn btn-custom" href="/AppCarwash/logout/">Cerrar Sesion</a>
+         </tr>
+        </div>  
+            <!-- Footer Start -->
+
+	    {% endblock %}
+    </body>
+</html>

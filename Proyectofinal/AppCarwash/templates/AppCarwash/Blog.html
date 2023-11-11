@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% extends "AppCarwash/padre.html" %}
+        {% load static %}
+        
+    </head>
+
+    <body>
+        {% block body %}
+         <!-- Page Header Start -->
+         <div class="page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Blog</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header End -->
+        
+        
+        <!-- Blog Start -->
+        <div class="blog">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Blog</p>
+                    <h2>Novedades y Curiosidades</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="{% static 'AppCarwash/img/blog-1.jpg' %}" alt="Image">
+                                <div class="meta-date">
+                                    <span>23</span>
+                                    <strong>Jan</strong>
+                                    <span>2023</span>
+                                </div>
+                            </div>
+                            <div class="blog-text">
+                                <h3><a href="#">Nanotecnología de Revestimiento:</a></h3>
+                                <p>
+                                    Imagina un escudo invisible que protege tu auto de manchas, polvo y suciedad. Con nuestra avanzada nanotecnología de revestimiento, aplicamos una capa ultrafina pero increíblemente resistente sobre la superficie de tu vehículo. Este revolucionario escudo repelente de suciedad mantiene tu auto impecable durante más tiempo y facilita la limpieza.
+                                </p>
+                            </div>
+                            <div class="blog-meta">
+                                <p><i class="fa fa-comments"></i><a href="">18 Comentarios</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="{% static 'AppCarwash/img/blog-2.jpg' %}" alt="Image">
+                                <div class="meta-date">
+                                    <span>03</span>
+                                    <strong>Jun</strong>
+                                    <span>2023</span>
+                                </div>
+                            </div>
+                            <div class="blog-text">
+                                <h3><a href="#">Limpieza Ultrasónica</a></h3>
+                                <p>
+                                    Hemos adoptado la tecnología ultrasónica para realizar una limpieza profunda y delicada en las áreas más difíciles de alcanzar de tu vehículo. Los transductores ultrasónicos emiten ondas de alta frecuencia, eliminando la suciedad y los residuos de las áreas de difícil acceso, como las rejillas de ventilación y los rincones del interior del auto.
+                                </p>
+                            </div>
+                            <div class="blog-meta">
+                                <p><i class="fa fa-comments"></i><a href="">10 Comentarios</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="{% static 'AppCarwash/img/blog-3.jpg' %}" alt="Image">
+                                <div class="meta-date">
+                                    <span>12</span>
+                                    <strong>Sep</strong>
+                                    <span>2023</span>
+                                </div>
+                            </div>
+                            <div class="blog-text">
+                                <h3><a href="#">Eco-Friendly y Sin Agua</a></h3>
+                                <p>
+                                    Nuestro enfoque eco-friendly utiliza técnicas de limpieza sin agua que son suaves con el medio ambiente y efectivas para tu vehículo. Utilizamos productos biodegradables y métodos de limpieza de alta presión que eliminan la necesidad de grandes cantidades de agua, ayudando a conservar este valioso recurso mientras mantenemos tu auto reluciente.
+                                </p>
+                            </div>
+                            <div class="blog-meta">
+                                <p><i class="fa fa-comments"></i><a href="">15 Comentarios</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog End -->
+	    {% endblock %}
+    </body>
+</html>
